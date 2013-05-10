@@ -1,4 +1,4 @@
-var isMobile = (function() {
+var isMobile = function() {
 
     return {
         check: function() {
@@ -15,5 +15,5 @@ var isMobile = (function() {
             "midp","240x320","blackberry","netfront","nokia","panasonic","portalmmm","sharp","sie-","sonyericsson","symbian","windows ce","benq","mda","mot-","opera mini","philips","pocket pc","sagem","samsung","sda","sgh-","vodafone","xda","palm","iphone","ipod","android"
         ]
     }
-})();
+}();
 
