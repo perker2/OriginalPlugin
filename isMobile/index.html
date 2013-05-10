@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+	<meta charset="UTF-8">
+	<title>isMobile</title>
+</head>
+<body>
+<h1></h1>
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="isMobile.js"></script>
+<script type="text/javascript">
+$(function() {
+	if(isMobile.check()) {
+		$('h1').text('Mobile!!');
+	}else {
+		$('h1').text('Not Mobile!!');
+	}
+});
+</script>
+</body>
+</html>
