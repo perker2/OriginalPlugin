@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+	<meta charset="UTF-8">
+	<title>scroll</title>
+	<style type="text/css">
+		#container {
+			height: 3000px;
+			position: relative;
+		}
+		footer {
+			height: 300px;
+			width: 100%;
+			background: #000;
+		}
+
+		.pageTop { position: fixed; right: 30px; bottom: 60px; }
+		.pageTop.fix { position: absolute!important; }
+		.pageTop a { display: block; }
+
+	</style>
+</head>
+<body>
+<div id="container">
+	<h1>スクロール</h1>
+	<ul>
+		<li>aタグを.pageTopで囲む。</li>
+		<li>.pageTopの上の階層にposition:relative;</li>
+	</ul>
+	<div class="pageTop"><a href="#">ページトップへ</a></div>
+</div>
+<!-- /#container -->
+<footer id="footer">フッター</footer>
+<!-- /#footer -->
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="scroll.js"></script>
+<script type="text/javascript">
+	$(function() {
+		scroll('.pageTop', '#footer');
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+	<meta charset="UTF-8">
+	<title>Original Slider</title>
+	<link rel="stylesheet" href="../css/slider.css"/>
+</head>
+<body>
+<div id="container">
+	<h1>Original Slider</h1>
+
+	<div class="slider">
+		<div class="viewport">
+			<ul class="contents">
+				<li><img src="img/1.jpg" alt=""/></li>
+				<li><img src="img/2.jpg" alt=""/></li>
+				<li><img src="img/3.jpg" alt=""/></li>
+				<li><img src="img/4.jpg" alt=""/></li>
+				<li><img src="img/5.jpg" alt=""/></li>
+			</ul>
+		</div>
+		<!-- /.viewport -->
+		<a class="prev btn" href="#"></a>
+		<!-- /.prev -->
+		<a class="next btn" href="#"></a>
+		<!-- /.next.btn -->
+	</div>
+	<!-- /.slider -->
+</div>
+<!-- /#container -->
+
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="slider.js"></script>
+<script type="text/javascript">
+	$(window).on('load', function() {
+		$('.slider').slider();
+	});
+</script>
+</body>
+</html>
